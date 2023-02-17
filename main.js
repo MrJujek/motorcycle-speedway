@@ -1,6 +1,24 @@
-import { NewGame, Player } from './classes.js';
+import Track from './track.js';
+import Menu from './menu.js';
 
-let game
+let players = [];
+let deadPlayers = [];
+let track, menu
+
 window.onload = () => {
-    game = new NewGame();
+    createGame();
+    showMenu();
+}
+
+function showMenu() {
+    menu = new Menu();
+    menu.createMenu();
+}
+
+function createGame() {
+    players = [];
+    deadPlayers = [];
+
+    track = new Track();
+    track.makeSpeedway();
 }

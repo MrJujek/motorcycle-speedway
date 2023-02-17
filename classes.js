@@ -53,8 +53,6 @@ export class NewGame {
         this.ctx.fill();
         this.ctx.stroke();
         this.ctx.closePath();
-
-        let Player1 = new Player(1)
     }
 }
 

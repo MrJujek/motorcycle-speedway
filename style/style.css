@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#speedway {
+  outline: 1px solid black;
+}
+
+#menu-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-option {
+  margin: 10px;
+}
+
+input {
+  margin-bottom: 5px;
+  width: 100px;
+  height: 30px;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+  color: darkgreen;
+}
+
+.add-remove-button {
+  width: 60px;
+  height: 30px;
+  background-color: lime;
+  border: 1px solid green;
+  border-radius: 5px;
+  cursor: pointer;
+  color: darkgreen;
+}
+
+h2 {
+  color: green;
+}
+
+#start-game {
+  width: 80px;
+  height: 40px;
+  background-color: limegreen;
+  border: 1px solid green;
+  border-radius: 5px;
+  color: darkgreen;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.table-laps {
+  margin: 10px auto 0px;
+  border: 1px solid green;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 5px;
+}
+
+th {
+  color: darkgreen;
+  background-color: limegreen;
+}
+
+h1 {
+  color: green;
+  text-shadow: 1px 1px 3px limegreen;
+  margin: auto;
+  width: fit-content;
+}

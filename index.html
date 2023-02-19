@@ -2,20 +2,84 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Żużel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css" />
 </head>
 
 <body>
+    <h1>Żużel</h1>
+    <div id="menu-box">
+        <div id="menu">
+            <div class="menu-option">
+                <h2>Player 1</h2>
+                <div>
+                    <input class="left-input" />
+                    <input class="right-input" />
+                </div>
+                <button class="add-remove-button">Add</button>
+            </div>
+
+            <div class="menu-option">
+                <h2>Player 2</h2>
+                <div>
+                    <input class="left-input" />
+                    <input class="right-input" />
+                </div>
+                <button class="add-remove-button">Add</button>
+            </div>
+
+            <div class="menu-option">
+                <h2>Player 3</h2>
+                <div>
+                    <input class="left-input" />
+                    <input class="right-input" />
+                </div>
+                <button class="add-remove-button">Add</button>
+            </div>
+
+            <div class="menu-option">
+                <h2>Player 4</h2>
+                <div>
+                    <input class="left-input" />
+                    <input class="right-input" />
+                </div>
+                <button class="add-remove-button">Add</button>
+            </div>
+        </div>
+        <button class="button" id="start-game">START</button>
+    </div>
+
     <div class="main">
-        Żużel
         <canvas id="speedway" width="800" height="400"></canvas>
     </div>
 
-    <script type="module" src="./js/main.js"></script>
+    <table class="table-laps" border="1">
+        <tr>
+            <th>Player</th>
+            <th>Laps</th>
+        </tr>
+        <tr>
+            <td>Player 1</td>
+            <td id="player1-laps">0</td>
+        </tr>
+        <tr>
+            <td>Player 2</td>
+            <td id="player2-laps">0</td>
+        </tr>
+        <tr>
+            <td>Player 3</td>
+            <td id="player3-laps">0</td>
+        </tr>
+        <tr>
+            <td>Player 4</td>
+            <td id="player4-laps">0</td>
+        </tr>
+    </table>
+
+    <script type="module" src="./build/main.js"></script>
 </body>
 
 </html>

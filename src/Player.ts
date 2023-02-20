@@ -155,10 +155,10 @@ export default class Player {
 
   update() {
     if (this.activeKeys.left) {
-      this.angle -= 0.05;
+      this.angle -= 0.025;
     }
     if (this.activeKeys.right) {
-      this.angle += 0.05;
+      this.angle += 0.025;
     }
 
     this.move();
@@ -212,12 +212,8 @@ export default class Player {
     }
 
     if (this.position[0] > this.canvas.width - this.canvas.width / 4) {
-      let distance = Math.sqrt(
-        Math.pow(
-          this.position[0] - this.canvas.width + this.canvas.width / 4,
-          2
-        ) + Math.pow(this.position[1] - this.canvas.height / 2, 2)
-      );
+      let distance = Math.sqrt(Math.pow(this.position[0] - this.canvas.width + this.canvas.width / 4, 2) + Math.pow(this.position[1] - this.canvas.height / 2, 2));
+
       if (distance < 50) {
         this.dead = true;
         return;

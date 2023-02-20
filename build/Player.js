@@ -118,10 +118,10 @@ export default class Player {
     }
     update() {
         if (this.activeKeys.left) {
-            this.angle -= 0.05;
+            this.angle -= 0.025;
         }
         if (this.activeKeys.right) {
-            this.angle += 0.05;
+            this.angle += 0.025;
         }
         this.move();
         this.draw();

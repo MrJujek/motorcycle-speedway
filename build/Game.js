@@ -5,7 +5,7 @@ export default class Game {
         this.players = [];
         this.activePlayers = [];
         this.deadPlayers = [];
-        this.laps = 1;
+        this.laps = 3;
         this.gameInterval = 0;
         this.players = players;
         this.canvas = document.querySelector("canvas");

@@ -77,7 +77,7 @@ export default class UI {
         startButton.onclick = () => {
             let activePlayers = this.players.filter((player) => player.active);
             if (activePlayers.length < 2) {
-                window.alert("Please select at least 2 players");
+                window.alert("Please select 2 or more players");
                 return;
             }
             this.startGame(activePlayers);

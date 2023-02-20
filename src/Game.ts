@@ -16,7 +16,7 @@ export default class Game {
   track: Track;
   activePlayers: Player[] = [];
   deadPlayers: Player[] = [];
-  laps: number = 1;
+  laps: number = 3;
   gameInterval: number = 0;
 
   constructor(players: PlayerInterface[]) {
@@ -73,7 +73,7 @@ export default class Game {
         this.canvas.width / 2,
         this.canvas.height / 2
       );
-      
+
       clearInterval(this.gameInterval);
       return;
     }
